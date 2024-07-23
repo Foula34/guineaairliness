@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Couleur de fond légère */
+            padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Assure que le conteneur est centré verticalement */
+            margin: 0; /* Enlève les marges par défaut du body */
+        }
+        .container {
+            max-width: 600px;
+            width: 100%; /* Assure que le conteneur s'adapte à l'écran */
+            background-color: #fff; /* Fond blanc pour le formulaire */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Légère ombre pour effet de profondeur */
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #333; /* Couleur du titre */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555; /* Couleur du texte des labels */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            padding: 10px; /* Augmente le padding pour plus de confort */
+            margin-bottom: 15px;
+            border: 1px solid #ddd; /* Couleur de bordure plus douce */
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .gender-group {
+            margin-bottom: 15px;
+        }
+        .gender-group label {
+            margin-right: 15px; /* Espace entre les boutons radio */
+        }
+        .phone-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .phone-group select {
+            flex: 1;
+            margin-right: 10px; /* Espace entre l'indicatif et le numéro */
+        }
+        .phone-group input {
+            flex: 2;
+        }
+        button {
+            background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+            color: #fff;
+            border: none;
+            padding: 12px 20px; /* Un peu plus de padding pour le bouton */
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: block; /* Assure que le lien prend toute la largeur du bouton */
+            text-decoration: none; /* Enlève le soulignement par défaut du lien */
+        }
+        button:hover {
+            background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .login-link a {
+            background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline; /* Soulignement au survol */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="text-align: center;">GuineanAirlines</h1>
+    <h2>Créer un compte</h2>
+    <form action="" method="post">
+        <label for="nom">Nom :</label>
+        <input id="nom" type="text" name="nom" required>
+        
+        <label for="prenom">Prénom :</label>
+        <input id="prenom" type="text" name="prenom" required>
+
+        <div class="gender-group">
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" name="genre" value="homme">
+
+            <label for="femme">Femme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+        </div>
+
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays" required>
+            <option value="" disabled selected>Sélectionnez votre pays</option>
+            <option value="france">France</option>
+            <option value="belgique">Belgique</option>
+            <option value="suisse">Suisse</option>
+            <option value="canada">Canada</option>
+            <option value="guinee">Guinée</option>
+
+            <option value="autre">Autre</option>
+            <!-- Ajoutez plus d'options de pays ici si nécessaire -->
+        </select>
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <div class="phone-group">
+            <select id="indicatif" name="indicatif" required>
+                <option value="" disabled selected>Indicatif</option>
+                <option value="+33">+33 France</option>
+                <option value="+32">+32 Belgique</option>
+                <option value="+41">+41 Suisse</option>
+                <option value="+1">+1 Canada</option>
+                <option value=" +224">+224 Guinée</option>
+                <!-- Ajoutez plus d'indicatifs ici si nécessaire -->
+            </select>
+            <input id="telephone" type="text" name="telephone" placeholder="Numéro de téléphone" required>
+        </div>
+
+        <label for="email">Email :</label>
+        <input id="email" type="email" name="email" required>
+        
+        <label for="password">Mot de passe :</label>
+        <input id="password" type="password" name="password" required>
+
+        <label for="naissance">Entrez votre date de naissance :</label>
+        <input type="date" id="naissance" name="date" required>
+        
+        <button type="submit"><a style="text-decoration: none; font-weight: bold;" href="accueil.html">S'inscrire</a></button>
+    </form>
+    
+    <div class="login-link">
+        <p>Vous avez déjà un compte ? <a href="accueil.html">Connectez-vous ici</a></p>
+    </div>
+</div>
+
+</body>
+</html>
