@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond légère */
+    padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Assure que le conteneur est centré verticalement */
+    margin: 0; /* Enlève les marges par défaut du body */
+}
+.container {
+    max-width: 600px;
+    width: 100%; /* Assure que le conteneur s'adapte à l'écran */
+    background-color: #fff; /* Fond blanc pour le formulaire */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Légère ombre pour effet de profondeur */
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #333; /* Couleur du titre */
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555; /* Couleur du texte des labels */
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    padding: 10px; /* Augmente le padding pour plus de confort */
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Couleur de bordure plus douce */
+    border-radius: 5px;
+    font-size: 14px;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+.gender-group {
+    margin-bottom: 15px;
+}
+.gender-group label {
+    margin-right: 15px; /* Espace entre les boutons radio */
+}
+.phone-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.phone-group select {
+    flex: 1;
+    margin-right: 10px; /* Espace entre l'indicatif et le numéro */
+}
+.phone-group input {
+    flex: 2;
+}
+button {
+    background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+    color: #fff;
+    border: none;
+    padding: 12px 20px; /* Un peu plus de padding pour le bouton */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Assure que le lien prend toute la largeur du bouton */
+    text-decoration: none; /* Enlève le soulignement par défaut du lien */
+}
+button:hover {
+    background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+}
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+.login-link a {
+    background-image: linear-gradient(to bottom left, #5ECDE1, #2CAEE2);
+    text-decoration: none;
+}
+.login-link a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
