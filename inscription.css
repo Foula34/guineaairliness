@@ -88,3 +88,10 @@ button:hover {
 .login-link a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }    
+#user{
+    text-align: center;
+    padding: 10px;
+    padding: 40px 20px;
+    font-size: 100px;
+    
+}
